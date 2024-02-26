@@ -1,7 +1,7 @@
-// Added code to display the current date in the header of the page.
+//Added code to display the current date in the header of the page.
 $(function () {
  const todaysDate = document.getElementById("currentDay");
-//  console.log("hey=",todaysDate)
+
 var now = dayjs()
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 console.log("=",now);
@@ -15,12 +15,12 @@ $(".saveBtn").click(function(){
   localStorage.setItem(timeblock,task)
 })
 
-// create a loop
+//create a loop
 for(var i = 9; i < 18; i++){
   $("#hour-" + i + " .description").val(localStorage.getItem("hour-" + i))
 
 } 
-// Use Day.js to get the current hour in 24-hour time
+//Use Day.js to get the current hour in 24-hour time
 $(".time-block").each(function(){
   var hour = dayjs().hour()
   var blockhour  = parseInt($(this).attr("id").split("-")[1])
