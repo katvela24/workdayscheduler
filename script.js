@@ -10,6 +10,18 @@ console.log("=",now);
 var z = now.$d +" "
 todaysDate.innerHTML = z.substring(0,11)
 
+var now1 = dayjs()
+var hours = ["1am", "2am", "3am", "4am", "5am", "6am", "7am","8am","9am", "10am", "11am", "12pm", "13pm", "14pm", "15pm", "16pm", "17pm", "18pm", "19pm", "20pm", "21pm", "22pm", "23pm", "24pm"];
+console.log("=",now1);
+var z = now1.$d +" "
+todaysDate.innerHTML = z.substring(0,11)
+
+$(".saveBtn").click(function(){
+  var task = $(this).siblings(".description").val()
+  var timeblock = $(this).parent().attr("id")
+  localStorage.setItem(timeblock,task)
+})
+
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
