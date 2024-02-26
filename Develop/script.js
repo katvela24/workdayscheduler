@@ -2,6 +2,15 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+ const todaysDate = document.getElementById("currentDay");
+//  console.log("hey=",todaysDate)
+var now = dayjs()
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log("=",now);
+var z = now.$d +" "
+todaysDate.innerHTML = z.substring(0,11)
+
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
