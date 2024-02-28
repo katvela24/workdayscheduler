@@ -20,7 +20,7 @@ for(var i = 9; i < 18; i++){
   $("#hour-" + i + " .description").val(localStorage.getItem("hour-" + i))
 
 } 
-//Use Day.js to get the current hour in 24-hour time
+//Use Day.js to get the current hour in 24-hour time format
 $(".time-block").each(function(){
   var hour = dayjs().hour()
   var blockhour  = parseInt($(this).attr("id").split("-")[1])
