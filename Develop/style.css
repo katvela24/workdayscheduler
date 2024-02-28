@@ -7,6 +7,11 @@ body {
 
 }
 
+/* hide the image and alt text */
+img {
+  display:none;
+}
+
 textarea {
   background: transparent;
   border: none;
