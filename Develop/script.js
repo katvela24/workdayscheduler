@@ -13,6 +13,7 @@ $(".saveBtn").click(function(){
   var task = $(this).siblings(".description").val()
   var timeblock = $(this).parent().attr("id")
   localStorage.setItem(timeblock,task)
+  // need to develop this : console.log("Appointment added to Local Storage",description)
 })
 
 //create a loop

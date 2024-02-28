@@ -1,6 +1,6 @@
 TITLE:
 
-WorkDay Scheduler
+Work Day Scheduler
 
 
 DESCRIPTION:
